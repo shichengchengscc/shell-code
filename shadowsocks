@@ -1,0 +1,16 @@
+wget --no-check-certificate https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocksR.sh
+chmod +x shadowsocksR.sh
+./shadowsocksR.sh 2>&1 | tee shadowsocksR.log
+
+
+##卸载步骤##
+./shadowsocksR.sh uninstall
+
+
+
+#####默认配置：
+#####服务器端口：自己设定（如不设定，默认从 9000-19999 之间随机生成）
+#####密码：自己设定（如不设定，默认为 teddysun.com）
+#####加密方式：自己设定（如不设定，默认为 aes-256-cfb）
+#####协议（Protocol）：自己设定（如不设定，默认为 origin）
+#####混淆（obfs）：自己设定（如不设定，默认为 plain）
